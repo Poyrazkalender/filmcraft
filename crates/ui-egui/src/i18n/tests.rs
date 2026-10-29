@@ -15,6 +15,7 @@ fn catalog_text(l: Language) -> Option<&'static str> {
         Language::Id => Some(include_str!("id.tsv")),
         Language::It => Some(include_str!("it.tsv")),
         Language::Ko => Some(include_str!("ko.tsv")),
+        Language::Tr => Some(include_str!("tr.tsv")),
     }
 }
 
@@ -63,6 +64,7 @@ fn unknown_strings_pass_through_and_languages_round_trip() {
         (Language::Id, "Bahasa Indonesia"),
         (Language::It, "Italiano"),
         (Language::Ko, "한국어"),
+        (Language::Tr, "Türkçe"),
     ] {
         assert_eq!(l.name(), name);
     }
@@ -513,6 +515,7 @@ fn language_commands_switch_and_persist_without_a_document() {
         ("french", Language::Fr, "fr", "Français", Some(("app.language.german", "Deutsch"))),
         ("indonesian", Language::Id, "id", "Bahasa Indonesia", Some(("app.language.french", "Français"))),
         ("italian", Language::It, "it", "Italiano", Some(("app.language.indonesian", "Bahasa Indonesia"))),
+        ("turkish", Language::Tr, "tr", "Türkçe", Some(("app.language.italian", "Italiano"))),
     ] {
         switch_and_check(&mut app, &ctx, name, lang, code, own, earlier);
     }
@@ -575,7 +578,12 @@ fn system_language_picks_italian_korean_and_the_first_known() {
     for tag in ["ko", "ko-KR", "ko_KR.UTF-8"] {
         assert_eq!(l(&[tag]), Language::Ko, "{tag}");
     }
-    for none in [&["ita"][..], &["i"], &["-it"]] {
+    // --- TÜRKÇE EKLENTİSİ BURADAN BAŞLIYOR ---
+    for tag in ["tr", "TR", "tr-TR", "tr_TR.UTF-8", "tr_TR", "tr-CY"] {
+        assert_eq!(l(&[tag]), Language::Tr, "{tag}");
+    }
+    // -----------------------------------------
+    for none in [&["ita"][..], &["i"], &["-it"], &["tur"], &["-tr"]] {
         assert_eq!(l(none), Language::En, "{none:?}");
     }
     assert_eq!(l(&["sv-SE", "nl", "es-MX", "ja"]), Language::Es, "the first one the interface has");
@@ -589,7 +597,6 @@ fn system_language_picks_italian_korean_and_the_first_known() {
     assert_eq!(l(&[&"x".repeat(1 << 20), "es"]), Language::Es);
     assert_eq!(l(&[&"de".repeat(1 << 19), "de-DE"]), Language::De);
 }
-
 /// #218: the `system` preference (the default) asks the host for the system's languages; an
 /// explicit choice does not, and without a host hook System Language is English.
 #[test]
