@@ -344,7 +344,6 @@
 	Import	İçe Aktar
 	{name} - Edited	{name} - Düzenlendi
 	Full screen	Tam Ekran
-	Volume	Ses Düzeyi
 	Master volume: use the Audio Track Mixer	Ana ses düzeyi: Ses İzi Mikserini kullanın
 	Search	Ara
 	Quick Export	Hızlı Dışa Aktar
@@ -680,7 +679,7 @@
 	first marker	ilk işaretçi
 	Offset Audio by:	Sesi kaydır:
 	Offset:	Kaydırma:
-	frames	kare
+	frames	kareler
 	Reference track:	Referans izi:
 	lowest (V1…)	en düşük (V1…)
 	Remove Audio from AV Clip	AV klipinden sesi kaldır
@@ -1195,7 +1194,6 @@
 	Open in Timeline	Zaman Çizgisinde Aç
 	New Sequence From Clip	Klipten Yeni Dizilim Oluştur
 	Sequence From Clip	Klipten Oluşturulan Dizi
-	Set Poster Frame	Kapak Karesini Ayarla
 	Universal Counting Leader…	Evrensel Sayma Lideri…
 	Proxy	Proxy
 	Open in Place	Yerinde Aç
@@ -1231,7 +1229,6 @@
 	Unrendered: render to play back in real time	Render edilmedi: gerçek zamanlı oynatmak için render edin
 	Rendered preview	Render edilmiş önizleme
 	✓ Enable	✓ Etkinleştir
-	Unlink	Bağlantıyı Kopar
 	(Default)	(Varsayılan)
 	(RGB) Gamma	(RGB) Gama
 	(RGB) Input Black Level	(RGB) Giriş Siyah Seviyesi
@@ -2303,7 +2300,6 @@
 	Retro	Retro
 	Reveal Nested Sequence	Yuvalanmış Diziyi Göster
 	Reveal Original Image	Orijinal Görüntüyü Göster
-	Reveal in Project	Projede Göster
 	Reverb Amount	Yankı (Reverb) Miktarı
 	Reverse	Ters Çevir
 	Right - Left	Sağ - Sol
@@ -2646,7 +2642,6 @@
 	Video 8	Video 8
 	Video Codec	Video Kodeği
 	Video Duration	Video Süresi
-	Video Effects	Video Efektleri
 	Video In Point	Video Giriş Noktası
 	Video In	Video Girişi
 	Video Info	Video Bilgisi
@@ -2654,7 +2649,6 @@
 	Video Out Point	Video Çıkış Noktası
 	Video Out	Video Çıkışı
 	Video Transition Default Duration	Varsayılan Video Geçiş Süresi
-	Video Transitions	Video Geçişleri
 	Video Usage	Video Kullanımı
 	Vignette	Vinyet
 	Vivid Light	Canlı Işık
@@ -2714,12 +2708,10 @@
 	Zoom Amount	Yakınlaştırma Miktarı
 	Zoom Blur	Yakınlaştırma Bulanıklığı
 	Zoom Strength	Yakınlaştırma Şiddeti
-	days	gün
-	frames	kare
+	days	gün	
 	milliseconds	milisaniye
 	minute(s)	dakika
 	second(s)	saniye
-	seconds	saniye
 	AAF…	AAF…
 	Audio…	Ses…
 	Avid Log Exchange…	Avid Log Exchange…
@@ -2808,7 +2800,6 @@
 	Overwrite Edit	Üstüne Yazma Düzenlemesi
 	Clip Overlap:	Klip Çakışması:
 	Frames per Still:	Hareketsiz Görüntü Başına Kare:
-	Transitions	Geçişler
 	Apply Default Audio Transition	Varsayılan Ses Geçişini Applica/Uygula
 	Apply Default Video Transition	Varsayılan Video Geçişini Uygula
 	Ignore Options	Yoksayma Seçenekleri
@@ -2890,7 +2881,6 @@
 	Ready	Hazır
 	Encoding {n}%	Kodlanıyor %{n}
 	Start Queue	Kuyruğu Başlat
-	Stop	Durdur
 	Clear Finished	Tamamlananları Temizle
 	Not supported by FilmCraft's encoders yet	Henüz FilmCraft'ın kodlayıcıları tarafından desteklenmiyor
 	Sequence name	Dizi adı
@@ -2906,7 +2896,6 @@
 	File Format	Dosya Biçimi
 	SubRip Subtitle (.srt)	SubRip Altyazısı (.srt)
 	WebVTT (.vtt)	WebVTT (.vtt)
-	Title	Başlık
 	Creator	Oluşturan
 	Copyright	Telif Hakkı
 	Image	Görüntü
@@ -3255,10 +3244,8 @@
 	Ripple Sequence Markers	Dizi İşaretçilerini Kaydır
 	Reset All Parameters	Tüm Parametreleri Resetle
 	Right align text	Metni sağa yasla
-	Ripple Edit Tool	Dalgalı Düzenleme Aracı
 	Ripple Trim Next Edit to Playhead	Sonraki Kesimi Oynatma Kafasına Dalgalı Kırp
 	Ripple Trim Previous Edit to Playhead	Önceki Kesimi Oynatma Kafasına Dalgalı Kırp
-	Rolling Edit Tool	Döndürerek Düzenleme Aracı
 	Render Effects In to Out	Girişten Çıkışa Efektleri Render Et
 	Select Camera 1	Kamera 1'i Seç
 	Select Camera 2	Kamera 2'yi Seç
@@ -3291,21 +3278,16 @@
 	Show Previous Screen	Önceki Ekranı Göster
 	Show Program Transcript	Program Deşifresini Göster
 	Transcript	Konuşma Metni
-	Shuttle Left	Sola Mekik (Shuttle Left)
-	Shuttle Right	Sağa Mekik (Shuttle Right)
 	Shuttle Slow Left	Yavaş Sola Mekik
 	Shuttle Slow Right	Yavaş Sağa Mekik
-	Shuttle Stop	Mekiği Durdur
 	Slide Clip Selection Left Five Frames	Klip Seçimini Beş Kare Sola Kaydır (Slide)
 	Slide Clip Selection Left One Frame	Klip Seçimini Bir Kare Sola Kaydır (Slide)
 	Slide Clip Selection Right Five Frames	Klip Seçimini Beş Kare Sağa Kaydır (Slide)
 	Slide Clip Selection Right One Frame	Klip Seçimini Bir Kare Sağa Kaydır (Slide)
-	Slide Tool	Kaydırma Aracı (Slide Tool)
 	Slip Clip Selection Left Five Frames	Klip Seçimini Beş Kare Sola Kaydır (Slip)
 	Slip Clip Selection Left One Frame	Klip Seçimini Bir Kare Sola Kaydır (Slip)
 	Slip Clip Selection Right Five Frames	Klip Seçimini Beş Kare Sağa Kaydır (Slip)
 	Slip Clip Selection Right One Frame	Klip Seçimini Bir Kare Sağa Kaydır (Slip)
-	Slip Tool	Kaydırma Aracı (Slip Tool)
 	Social Vertical 1080×1920	Sosyal Dikey 1080×1920
 	Soft Vignette	Yumuşak Vinyet
 	Source In/Out	Kaynak Giriş/Çıkış
@@ -3355,8 +3337,6 @@
 	Toggle Track Output for All Targeted Video Tracks	Tüm Hedeflenen Video İzleri İçin İz Çıktısını Aç/Kapat
 	Toggle Trim Type	Kırpma Türünü Değiştir
 	Toggle View	Görünümü Değiştir
-	Track Select Backward Tool	Geriye Doğru İz Seçim Aracı
-	Track Select Forward Tool	İleriye Doğru İz Seçim Aracı
 	Track Selected Mask	Seçili Maskeyi Takip Et
 	Trim Next Edit to Playhead	Sonraki Kesimi Oynatma Kafasına Kırp
 	Trim Previous Edit to Playhead	Önceki Kesimi Oynatma Kafasına Kırp
