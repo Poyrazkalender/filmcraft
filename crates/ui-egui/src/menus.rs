@@ -39,7 +39,7 @@ pub const UI_COMMANDS: &[UiCommand] = &[
     uic!("app.language.polish", "Polski", ["Edit", "Language"], None),
     uic!("app.language.portuguese", "Português (Brasil)", ["Edit", "Language"], None),
     uic!("app.language.swedish", "Svenska", ["Edit", "Language"], None),
-    uic!("app.language.turkish", "Türkçe", ["Edit", "Language"], None),
+    
     uic!("app.language.russian", "Русский", ["Edit", "Language"], None),
     uic!("app.language.ukrainian", "Українська", ["Edit", "Language"], None),
     uic!("app.language.japanese", "日本語", ["Edit", "Language"], None),
