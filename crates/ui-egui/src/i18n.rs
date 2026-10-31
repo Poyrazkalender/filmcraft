@@ -76,10 +76,10 @@ static ITALIAN: OnceLock<Catalog> = OnceLock::new();
 static BOSNIAN: OnceLock<Catalog> = OnceLock::new();
 static CZECH: OnceLock<Catalog> = OnceLock::new();
 static SWEDISH: OnceLock<Catalog> = OnceLock::new();
-static TURKISH: OnceLock<Catalog> = OnceLock::new();
+
 
 impl Language {
-    pub const ALL: [Self; 13] = [Self::En, Self::Ja, Self::Es, Self::PtBr, Self::Uk, Self::ZhCn, Self::De, Self::Ru, Self::Fr, Self::Id, Self::Ko, Self::It, Self::Tr];
+    
     pub const ALL: [Self; 17] = [
         Self::En,
         Self::Ja,
@@ -179,7 +179,7 @@ impl Language {
     /// only for Simplified locales (`zh`, `zh-CN`, `zh-SG`, `zh-Hans…`); Traditional ones (`zh-TW`,
     /// `zh-HK`, `zh-MO`, `zh-Hant…`) are skipped.
     pub fn from_locales(tags: &[String]) -> Self {
-        const PRIMARY: [(&str, Language); 13] = [
+        
         const PRIMARY: [(&str, Language); 17] = [
             ("en", Language::En),
             ("ja", Language::Ja),
